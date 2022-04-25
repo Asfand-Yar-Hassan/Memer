@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -61,8 +62,11 @@ main {
   position: relative;
 }
 .meme--image {
-  max-width: 100%;
+  width: 50%;
+  height: 70%;
   border-radius: 3px;
+  position: relative;
+  left: 30%;
 }
 .meme--text {
   position: absolute;
@@ -81,9 +85,9 @@ main {
     -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
     2px 2px 5px #000;
 }
-.bottom{
- bottom: 0;
+.bottom {
+  bottom: 0;
 }
-.top{
- top:0;
+.top {
+  top: 0;
 }
