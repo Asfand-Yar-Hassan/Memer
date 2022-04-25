@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {FaRandom} from 
+import { FaRandom } from 'react-icons/fa'
 import data from '../data'
 
 const Meme = () => {
@@ -32,7 +32,6 @@ const Meme = () => {
   return (
     <main>
       <div className='form'>
-        
         <input
           type='text'
           placeholder='Top Text'
@@ -41,7 +40,7 @@ const Meme = () => {
           name='topText'
           onChange={handleChange}
         />
-        
+
         <input
           type='text'
           placeholder='Bottom Text'
@@ -50,9 +49,16 @@ const Meme = () => {
           name='bottomText'
           onChange={handleChange}
         />
-       <button className='form--button' onClick={getMemeImage}>Random Meme </button>
+        <button className='form--button' onClick={getMemeImage}>
+          Random Meme <FaRandom />
+        </button>
       </div>
-      
+      <div className='meme'>
+        <img src={meme.randomImage} alt={meme.name} className='meme--image' />
+        <h2 className='meme--text top'>{meme.topText}</h2>
+        <h2 className='meme--text bottom'>{meme.bottomText}</h2>
+      </div>
     </main>
   )
 }
+export default Meme
