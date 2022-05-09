@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { FaRandom } from 'react-icons/fa'
 
-
 const Meme = () => {
   const [meme, setMeme] = useState({
     topText: '',
     bottomText: '',
     randomImage: 'https://i.imgflip.com/1g8my4.jpg',
   })
+
   const [allMemes, setAllMemes] = useState([])
 
   useEffect(() => {
